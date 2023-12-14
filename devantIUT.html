@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style2.css">
+    <title>devant iut</title>
+</head>
+<body>
+
+<div class="main">
+    
+    <header>
+        <a class="retour">
+            <span onclick="history.back()">Retour</span>
+        </a>
+    </header>
+
+
+    <img id='perso' src='static/images/perso/perso3.png'>
+
+    <div class="bulle-texte">
+        <span>Votre texte ici</span>
+    </div>
+    <a href="hall.html" class="link">
+        <span>NEXT</span>
+    </a>
+
+</div>
+
+<script>
+document.querySelector('.link').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('.main').classList.add('fade-out');
+    setTimeout(function() {
+        window.location.href = document.querySelector('.link').href;
+    }, 1000);
+});
+
+
+document.querySelector('.retour').addEventListener('click', function(e) {
+    console.log('je suis dans la fonction qui clique sur le retour')
+    e.preventDefault();
+    document.querySelector('.main').classList.add('fade-in');
+    setTimeout(function() {
+        console.log(document.querySelector('.retour').href)
+        window.location.href = document.querySelector('.retour').href;
+    }, 1000);
+});
+
+</script>
+
+</body>
+</html>

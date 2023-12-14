@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+
+body{
+    overflow: hidden;
+}
+
+.main{
+    background-image:url(../images/fond/devant_iut.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center bottom;
+    opacity: 1;
+    transition: opacity 1s ease-in-out, transform 2s ease-in-out;
+}
+
+.main.fade-out {
+    opacity: 0;
+    transform: scale(2);
+}
+
+header{
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    padding: 20px;
+    color: white;
+}
+
+
+.retour{
+    user-select: none;
+    cursor: pointer;
+}
+
+#perso {
+    margin-top: 140px;
+    margin-left: 200px;
+    transform: scale(0.5);
+}
+
+.bulle-texte {
+    position: absolute;
+    padding: 50px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    left: 400px; 
+    top: 230px;
+}
+
+.bulle-texte::after {
+    content: "";
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    transform: rotate(40deg);
+    margin-left: -5px;
+    border-width: 30px;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+.link {
+    position: absolute;
+    top: 320px;
+    left: 550px;
+    padding: 5px;
+    background-color: #000000;
+    border-radius: 4px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.link:hover {
+    transform: scale(1.2); /* grossit le lien lorsqu'il est survolé */
+}
+
+
+@media (max-width: 600px) {
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Accueil</title>
+</head>
+<body>
+    <header>
+        <div class="principale">
+            <div class="logo">
+                <a href="bullebd.html">
+                    <img src="static/images/fond/logo.png" alt="logo iut">
+                </a>
+            </div>
+            <ul>
+                <li class="active">
+                    <a href="#">accueil</a>
+                </li>
+                <li>
+                    <a href="#">plan</a>
+                </li>
+                <li>
+                    <a href="https://www.iutbeziers.fr">à propos de nous</a>
+                </li>
+                <li>
+                    <a href="#">contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="titre">
+            <h1>
+                BIENVENUE
+            </h1>
+        </div>
+        <div class="bouton">
+            <a href="devantIUT.html" class="btn">COMMENCER LA VISITE</a>
+        </div>
+    </header>
+
+
+<script>
+    document.querySelector('.bouton').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(function() {
+            window.location.href = document.querySelector('.btn').href;
+        }, 1000);
+    });
+</script>
+</body>
+</html>
