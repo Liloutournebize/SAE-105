@@ -10,7 +10,7 @@ body{
 }
 
 .main{
-    background-image:url(../images/fond/piano.jpeg);
+    background-image:url(../images/fond/mac.jpeg);
     height: 100vh;
     background-size: cover;
     background-position: center bottom;
@@ -36,10 +36,9 @@ header{
 }
 
 #perso {
-    height: auto;
-    width: auto;
-    margin-top: 140px;
-    margin-left: 200px;
+    width: 50%;
+    margin-top: -200px;
+    margin-left: 100px;
     transform: scale(0.5);
 }
 
@@ -50,8 +49,8 @@ header{
     background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    left: 400px; 
-    top: 230px;
+    left: 480px; 
+    top: 50px;
 }
 
 .bulle-texte::after {
@@ -68,13 +67,26 @@ header{
 
 .link {
     position: absolute;
-    top: 330px;
-    left: 580px;
+    top: 200px;
+    left: 650px;
     padding: 5px;
     background-color:greenyellow;
     border-radius: 4px;
     text-decoration: none;
     color: black;
+    user-select: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.link2 {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    padding: 5px;
+    background-color: blue;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
     user-select: none;
     transition: transform 0.3s ease-in-out;
 }

@@ -10,7 +10,7 @@ body{
 }
 
 .main{
-    background-image:url(../images/fond/piano.jpeg);
+    background-image:url(../images/fond/haut-escalier.jpeg);
     height: 100vh;
     background-size: cover;
     background-position: center bottom;
@@ -36,10 +36,9 @@ header{
 }
 
 #perso {
-    height: auto;
-    width: auto;
-    margin-top: 140px;
-    margin-left: 200px;
+    width: 50%;
+    margin-top: -200px;
+    margin-left: 100px;
     transform: scale(0.5);
 }
 
@@ -50,8 +49,8 @@ header{
     background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    left: 400px; 
-    top: 230px;
+    left: 480px; 
+    top: 50px;
 }
 
 .bulle-texte::after {
@@ -68,8 +67,8 @@ header{
 
 .link {
     position: absolute;
-    top: 330px;
-    left: 580px;
+    top: 700px;
+    left: 600px;
     padding: 5px;
     background-color:greenyellow;
     border-radius: 4px;
@@ -79,6 +78,44 @@ header{
     transition: transform 0.3s ease-in-out;
 }
 
+.link2 {
+    position: absolute;
+    top: 200px;
+    left: 680px;
+    padding: 5px;
+    background-color:lightseagreen;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    user-select: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.link3 {
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    padding: 5px;
+    background-color: yellow;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    user-select: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.link4 {
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    padding: 5px;
+    background-color:lightblue;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    user-select: none;
+    transition: transform 0.3s ease-in-out;
+}
 
 .link:hover {
     transform: scale(1.2);

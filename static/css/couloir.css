@@ -10,7 +10,7 @@ body{
 }
 
 .main{
-    background-image:url(../images/fond/piano.jpeg);
+    background-image:url(../images/fond/couloir0.jpeg);
     height: 100vh;
     background-size: cover;
     background-position: center bottom;
@@ -36,10 +36,9 @@ header{
 }
 
 #perso {
-    height: auto;
-    width: auto;
-    margin-top: 140px;
-    margin-left: 200px;
+    width: 60%;
+    margin-top: -250px;
+    margin-left: 500px;
     transform: scale(0.5);
 }
 
@@ -50,8 +49,8 @@ header{
     background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    left: 400px; 
-    top: 230px;
+    left: 1000px; 
+    top: 0px;
 }
 
 .bulle-texte::after {
@@ -68,8 +67,8 @@ header{
 
 .link {
     position: absolute;
-    top: 330px;
-    left: 580px;
+    top: 200px;
+    left: 600px;
     padding: 5px;
     background-color:greenyellow;
     border-radius: 4px;
