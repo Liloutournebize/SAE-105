@@ -66,20 +66,71 @@ header{
 
 .link {
     position: absolute;
-    top: 320px;
-    left: 550px;
+    top: 380px;
+    left: 600px;
     padding: 5px;
-    background-color: #000000;
+    background-color:greenyellow;
     border-radius: 4px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: black;
     user-select: none;
     transition: transform 0.3s ease-in-out;
 }
 
+.link2 {
+    position: absolute;
+    top: 400px;
+    left: 1200px;
+    padding: 5px;
+    background-color:lightseagreen;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    user-select: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.link3 {
+    position: absolute;
+    top: 130px;
+    left: 525px;
+    padding: 5px;
+    background-color: yellow;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    user-select: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.link4 {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    padding: 5px;
+    background-color:lightblue;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    user-select: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.link5 {
+    position: absolute;
+    top: 500px;
+    left: 1300px;
+    padding: 5px;
+    background-color: lightcoral;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    user-select: none;
+    transition: transform 0.3s ease-in-out;
+}
 
 .link:hover {
-    transform: scale(1.2); /* grossit le lien lorsqu'il est survolé */
+    transform: scale(1.2);
 }
 
 

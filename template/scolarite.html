@@ -3,30 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/style2.css">
+    <link rel="stylesheet" href="../static/css/scolarité.css">
     <title>devant iut</title>
-
-    <style>
-        .texte-interne {
-            overflow: hidden;
-            white-space: nowrap;
-            margin: 0 auto;
-           
-            font-size: 24px;
-            animation: typing 3.5s steps(40, end),
-                       blink-caret 1ms step-end infinite;
-        }
-
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: orange; }
-        }
-    </style>
 </head>
 <body>
 
@@ -38,23 +16,20 @@
         </a>
     </header>
 
-    <img id='perso' src='../static/images/perso/perso3.png'>
+    <img id='perso' src='../static/images/perso/perso1.png'>
 
     <div class="bulle-texte" id="conversation">
-        <div class="texte-interne" id="typed-text">
+        <div class="texte-interne">
+            <span>Ici se trouve la scolarité. <br> Pour régler vos absences <br> (justifiées j'espère) ou encore <br> pour toute autre informations.</span>
         </div>
     </div>
-    <a href="hall.html" class="link">
-        <span>Suivant</span>
+    <a href="hall2.html" class="link">
+        <span>Retour dans le hall</span>
     </a>
 
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const text = "Bonjour ! Nous voici<br>devant l'IUT de Béziers.<br>Entrons !";
-    document.getElementById('typed-text').innerHTML = text;
-});
 
 document.querySelector('.link').addEventListener('click', function(e) {
     e.preventDefault();
@@ -73,6 +48,7 @@ document.querySelector('.retour').addEventListener('click', function(e) {
         window.location.href = document.querySelector('.retour').href;
     }, 1000);
 });
+
 </script>
 
 </body>

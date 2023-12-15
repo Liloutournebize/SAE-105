@@ -10,7 +10,7 @@ body{
 }
 
 .main{
-    background-image:url(../images/fond/devant_iut.jpeg);
+    background-image:url(../images/fond/scene.jpeg);
     height: 100vh;
     background-size: cover;
     background-position: center bottom;
@@ -36,7 +36,7 @@ header{
 }
 
 #perso {
-    margin-top: 200px;
+    margin-top: 140px;
     margin-left: 200px;
     transform: scale(0.5);
 }
@@ -67,19 +67,19 @@ header{
 .link {
     position: absolute;
     top: 380px;
-    left: 620px;
+    left: 600px;
     padding: 5px;
-    background-color: #000000;
+    background-color:greenyellow;
     border-radius: 4px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: black;
     user-select: none;
     transition: transform 0.3s ease-in-out;
 }
 
 
 .link:hover {
-    transform: scale(1.2); /* grossit le lien lorsqu'il est survolé */
+    transform: scale(1.2);
 }
 
 
