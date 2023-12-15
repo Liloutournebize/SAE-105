@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style2.css">
     <title>devant iut</title>
+
+    <style>
+        .texte-interne {
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+           
+            font-size: 24px;
+            animation: typing 3.5s steps(40, end),
+                       blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
+        }
+    </style>
 </head>
 <body>
 
@@ -16,11 +38,12 @@
         </a>
     </header>
 
-
     <img id='perso' src='static/images/perso/perso3.png'>
 
-    <div class="bulle-texte">
-        <span>Votre texte ici</span>
+    <div class="bulle-texte" id="conversation">
+        <div class="texte-interne" id="typed-text">
+            <!-- Le texte apparaîtra ici -->
+        </div>
     </div>
     <a href="hall.html" class="link">
         <span>NEXT</span>
@@ -29,6 +52,11 @@
 </div>
 
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const text = "Voici l'iutzeifnizofn<br>i\"fzifgnp<br>oidnzeiofnz";
+    document.getElementById('typed-text').innerHTML = text;
+});
+
 document.querySelector('.link').addEventListener('click', function(e) {
     e.preventDefault();
     document.querySelector('.main').classList.add('fade-out');
@@ -36,7 +64,6 @@ document.querySelector('.link').addEventListener('click', function(e) {
         window.location.href = document.querySelector('.link').href;
     }, 1000);
 });
-
 
 document.querySelector('.retour').addEventListener('click', function(e) {
     console.log('je suis dans la fonction qui clique sur le retour')
@@ -47,7 +74,6 @@ document.querySelector('.retour').addEventListener('click', function(e) {
         window.location.href = document.querySelector('.retour').href;
     }, 1000);
 });
-
 </script>
 
 </body>

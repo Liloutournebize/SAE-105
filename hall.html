@@ -4,6 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style-hall.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .main {
+            flex: 1;
+            position: relative;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
     <title>devant iut</title>
 </head>
 <body>
@@ -16,11 +46,12 @@
         </a>
     </header>
 
-
     <img id='perso' src='static/images/perso/perso1.png'>
 
-    <div class="bulle-texte">
-        <span>Votre texte ici</span>
+    <div class="bulle-texte" id="conversation">
+        <div class="texte-interne">
+            <span>Voici l'iutzeifnizofn<br>i"fzifgnp<br>oidnzeiofnz</span>
+        </div>
     </div>
     <a href="hall.html" class="link">
         <span>NEXT</span>
@@ -29,6 +60,7 @@
 </div>
 
 <script>
+
 document.querySelector('.link').addEventListener('click', function(e) {
     e.preventDefault();
     document.querySelector('.main').classList.add('fade-out');
@@ -36,6 +68,17 @@ document.querySelector('.link').addEventListener('click', function(e) {
         window.location.href = document.querySelector('.link').href;
     }, 1000);
 });
+
+document.querySelector('.retour').addEventListener('click', function(e) {
+    console.log('je suis dans la fonction qui clique sur le retour')
+    e.preventDefault();
+    document.querySelector('.main').classList.add('fade-in');
+    setTimeout(function() {
+        console.log(document.querySelector('.retour').href)
+        window.location.href = document.querySelector('.retour').href;
+    }, 1000);
+});
+
 </script>
 
 </body>
